@@ -1,4 +1,4 @@
-package com.example.mvp.mvptest;
+package com.example.mvp.mvptest.main;
 
 import rx.Observable;
 

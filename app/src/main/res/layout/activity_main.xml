@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context="com.example.mvp.mvptest.MainActivity">
+	tools:context="com.example.mvp.mvptest.main.MainActivity">
 
 	<TextView
 		android:id="@+id/tvName"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Hello World!"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"
-		app:layout_constraintTop_toTopOf="parent"/>
+		android:layout_centerInParent="true"
+		android:text="Hello World!"/>
 
-</android.support.constraint.ConstraintLayout>
+	<Button
+		android:id="@+id/btSettings"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:text="@string/settings"/>
+
+	<Button
+		android:id="@+id/btMessage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:text="@string/settings"/>
+
+	<LinearLayout
+		android:id="@+id/llNavigationButtons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+
+		<Button
+			android:id="@+id/btVisibleButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<Button
+			android:id="@+id/btGoneButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"/>
+
+		<Button
+			android:id="@+id/btInvisibleButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="invisible"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

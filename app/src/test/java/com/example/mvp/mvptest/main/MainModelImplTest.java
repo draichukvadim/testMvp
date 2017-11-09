@@ -1,4 +1,8 @@
-package com.example.mvp.mvptest;
+package com.example.mvp.mvptest.main;
+
+import com.example.mvp.mvptest.main.MainModel;
+import com.example.mvp.mvptest.main.MainModelImpl;
+import com.example.mvp.mvptest.main.MainModelState;
 
 import org.junit.Assert;
 import org.junit.Before;

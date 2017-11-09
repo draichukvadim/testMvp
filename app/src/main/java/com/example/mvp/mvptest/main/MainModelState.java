@@ -1,4 +1,4 @@
-package com.example.mvp.mvptest;
+package com.example.mvp.mvptest.main;
 
 /**
  * Created by vadim on 02.11.2017.

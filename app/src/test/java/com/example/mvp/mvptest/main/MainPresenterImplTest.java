@@ -1,4 +1,10 @@
-package com.example.mvp.mvptest;
+package com.example.mvp.mvptest.main;
+
+import com.example.mvp.mvptest.main.MainModel;
+import com.example.mvp.mvptest.main.MainModelState;
+import com.example.mvp.mvptest.main.MainPresenter;
+import com.example.mvp.mvptest.main.MainPresenterImpl;
+import com.example.mvp.mvptest.main.MainView;
 
 import org.junit.Before;
 import org.junit.Test;
