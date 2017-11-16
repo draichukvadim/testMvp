@@ -80,7 +80,7 @@ public class MainActivityTest {
 	public void buttonClickShouldStartSettingsActivity() throws Exception {
 		Button button = this.mainView.findViewById(R.id.btSettings);
 		button.performClick();
-		Intent intent = Shadows.shadowOf(this.mainView).peekNextStartedActivity();
+		Intent intent = Shadows.shadowOf(this.mainView).peekNextStartedActivity(); //SHADOW
 		assertEquals(SettingsActivity.class.getCanonicalName(), intent.getComponent().getClassName());
 	}
 
